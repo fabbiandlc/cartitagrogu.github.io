@@ -1,0 +1,102 @@
+﻿/* Aplicar la fuente Poppins */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff; /* Fondo blanco */
+  color: #000; /* Texto en negro por defecto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Estilo de la carta */
+.card {
+  background-color: #ffe4e9; /* Fondo rosado claro */
+  border-radius: 15px;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  border: 2px solid #ff66b2; /* Borde rosa más intenso */
+}
+
+/* Estilo del contenido */
+.card-content h1 {
+  font-size: 2.2em;
+  color: #ff1493; /* Título en rosa intenso */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.card-content p {
+  font-size: 1.2em;
+  color: #333; /* Color de texto gris oscuro */
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Contenedor para los botones */
+.button-container {
+  display: flex; /* Para alinear los botones en línea */
+  justify-content: center; /* Centra los botones */
+  gap: 10px; /* Espacio entre los botones */
+}
+
+/* Botón para la playlist y GitHub */
+.playlist-button {
+  padding: 15px 40px;
+  font-size: 18px;
+  color: white;
+  background-color: #ff1493; /* Fondo rosa fuerte */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.playlist-button:hover {
+  background-color: #ff66b2; /* Rosa más claro al hacer hover */
+}
+
+/* Estilo de la sección de imágenes */
+.image-section {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-section img {
+  width: 48%; /* Cada imagen ocupará el 48% del espacio */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para las imágenes */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+  .card {
+    padding: 20px;
+  }
+
+  .card-content h1 {
+    font-size: 1.8em;
+  }
+
+  .card-content p {
+    font-size: 1.1em;
+  }
+
+  .playlist-button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .image-section img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho en pantallas pequeñas */
+    margin-bottom: 15px; /* Espacio entre las imágenes */
+  }
+}
