@@ -71,9 +71,12 @@ body {
 }
 
 .image-section img {
-  width: 48%; /* Cada imagen ocupará el 48% del espacio */
+  max-width: 100%; /* Permite que las imágenes se ajusten al contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para las imágenes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 }
 
 /* Estilos para dispositivos móviles */
